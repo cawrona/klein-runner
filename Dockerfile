@@ -1,6 +1,6 @@
 # klein-runner: FLUX.2 klein 4B runtime for RunPod (deps baked, weights fetched at boot).
 # Same base as the old path, so hosts that already cached it only pull the small deps layer.
-FROM pytorch/pytorch:2.8.0-cuda12.6-cudnn9-runtime
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
 
 ENV PIP_NO_CACHE_DIR=1 \
     PYTHONUNBUFFERED=1 \
